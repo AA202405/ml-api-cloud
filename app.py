@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 import joblib
 
 app = Flask(__name__)
+application = app
+
 
 # Load model
 model = joblib.load('sentiment_model.joblib')
